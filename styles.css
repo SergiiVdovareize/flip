@@ -68,6 +68,7 @@ body {
 .card-back.card-back-color {
     background-color: yellow;
     border: 2px #546b17 solid;
+    box-sizing: border-box;
 }
 .card-back img {
     width: 100%;
