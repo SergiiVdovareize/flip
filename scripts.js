@@ -4,13 +4,15 @@ function flipCard(card) {
     }
 }
 
+function closeFullscreen() {
+    const fullscreenDiv = document.getElementById('fullscreen');
+    fullscreenDiv.classList.add('hidden');
+    fullscreenDiv.querySelector('img').src = ''
+}
+
 function zoomImage(event) {
     const imgSrc = event.target.src;
-    const fullscreenDiv = document.createElement('div');
-    fullscreenDiv.classList.add('fullscreen');
-    fullscreenDiv.innerHTML = `<img src="${imgSrc}" alt="Fullscreen Image">`;
-    fullscreenDiv.onclick = function() {
-        document.body.removeChild(fullscreenDiv);
-    };
-    document.body.appendChild(fullscreenDiv);
+    const fullscreenDiv = document.getElementById('fullscreen');
+    fullscreenDiv.querySelector('img').src = imgSrc
+    fullscreenDiv.classList.remove('hidden');
 }
