@@ -68,10 +68,6 @@ body {
     cursor: pointer;
 }
 
-.fullscreen.hidden {
-    display: none;
-}
-
 .fullscreen {
     position: fixed;
     top: 0;
@@ -85,6 +81,10 @@ body {
     z-index: 1000;
     padding: 10px;
     box-sizing: border-box;
+}
+
+.fullscreen.hidden {
+    display: none;
 }
 
 .fullscreen img {
