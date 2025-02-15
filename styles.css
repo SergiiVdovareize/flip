@@ -12,7 +12,7 @@ body {
 }
 .container {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 0.8em;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
@@ -52,6 +52,7 @@ body {
 }
 .card-front {
     background-color: #248eff;
+    box-sizing: border-box;
 }
 .card-back {
     background-color: white;
@@ -75,6 +76,7 @@ body {
     border-radius: 10px;
     border: 2px #546b17 solid;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .fullscreen {
