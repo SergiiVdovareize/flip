@@ -8,6 +8,7 @@ body {
     box-sizing: border-box;
     background-color: #f7ffdc;
     overflow: hidden;
+    font-family: 'Merriweather';
 }
 .container {
     box-sizing: border-box;
@@ -43,17 +44,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    /* font-size: 1rem; */
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
     color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 .card-front {
-    background-color: #007BFF;
+    background-color: #248eff;
 }
 .card-back {
-    background-color: #FF5733;
+    background-color: white;
     transform: rotateY(180deg);
+}
+.card-back-title {
+    position: absolute;
+    bottom: 0.2em;
+    font-size: clamp(0.8rem, 2.5vw, 2rem);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 .card-back.card-back-color {
     background-color: yellow;
