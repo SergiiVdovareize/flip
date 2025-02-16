@@ -34,7 +34,7 @@ body {
     width: 100%;
     padding-top: 100%;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 1.6s;
 }
 .card.flipped .card-inner {
     transform: rotateY(180deg);
@@ -92,6 +92,7 @@ body {
 .card-back {
     background-color: white;
     transform: rotateY(180deg);
+    outline: none;
 }
 .card-back-title {
     position: absolute;
@@ -113,6 +114,8 @@ body {
     border: 2px #546b17 solid;
     cursor: pointer;
     box-sizing: border-box;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .fullscreen {
